@@ -7,6 +7,7 @@ This project is designed for Embedded Systems and can be simulated on Wokwi or i
 
 <h3>📌 Features</h3>
 <p>
+  
 ✅ Automatic fan speed control</n>
 ✅ Real-time temperature monitoring</n>
 ✅ LCD temperature display</n>
@@ -15,7 +16,7 @@ This project is designed for Embedded Systems and can be simulated on Wokwi or i
 ✅ Wokwi simulation support</p></n>
 
 <h3>🛠 Components Used</h3>
-<p>
+<table>
 | Component                    | Quantity    |</n>
 | ---------------------------- | ----------- |</n>
 | Arduino Uno                  | 1           |</n>
@@ -23,50 +24,51 @@ This project is designed for Embedded Systems and can be simulated on Wokwi or i
 | Servo Motor (Fan Simulation) | 1           |</n>
 | 16x2 LCD Display (I2C)       | 1           |</n>
 | Jumper Wires                 | As required |</n>
-</p></n>
+</table></n>
 
 
 <h3>⚙️ Working Principle</h3>
 <p>
+  
 1. The DHT22 sensor reads the temperature.
 
 2. Arduino processes the temperature value.
 
 3. Based on temperature:
 
-   * Below 25°C → Fan OFF (0° servo angle)
+  * Below 25°C → Fan OFF (0° servo angle)
 
-   * 25°C – 35°C → Medium Speed (90° servo angle)
+  * 25°C – 35°C → Medium Speed (90° servo angle)
 
-   * Above 35°C → Full Speed (180° servo angle)
+  * Above 35°C → Full Speed (180° servo angle)
 
 4. Temperature and fan status are displayed on the LCD.
 </p></n>
 
 <h3>🔌 Circuit Connections</h3>
-<p>
+<table>
 | DHT22 Pin | Arduino Pin |</n>
 | --------- | ----------- |</n>
 | VCC       | 5V          |</n>
 | GND       | GND         |</n>
 | Data      | Pin 2       |</n>
-</p></n>
-<p>
+</table></n>
+<table>
 | Servo Pin | Arduino Pin |</n>
 | --------- | ----------- |</n>
 | VCC       | 5V          |</n>
 | GND       | GND         |</n>
 | Signal    | Pin 9       |</n>
-</p></n>
+</table></n>
 
-<p>
+<table>
 | LCD Pin | Arduino Pin |</n>
 | ------- | ----------- |</n>
 | VCC     | 5V          |</n>
 | GND     | GND         |</n>
 | SDA     | A4          |</n>
 | SCL     | A5          |</n>
-</p></n>
+</table></n>
 
 <h4><b>This project can be simulated on Wokwi:
 
@@ -74,6 +76,7 @@ https://wokwi.com/projects/456681379403831297</b></h4></n>
 
 <h3>🚀 Future Improvements</h3>
 <p>
+  
 * PWM fan speed control (real DC fan)
 
 * Mobile app monitoring (IoT)
